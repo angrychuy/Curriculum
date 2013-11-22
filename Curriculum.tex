@@ -1,0 +1,169 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Stylish Curriculum Vitae
+% LaTeX Template
+% Version 1.0 (18/7/12)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Stefano (http://stefano.italians.nl/)
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% The main font used in this template, Adobe Garamond Pro, does not 
+% come with Windows by default. You will need to download it in
+% order to get an output as in the preview PDF. Otherwise, change this 
+% font to one that does come with Windows or comment out the font line 
+% to use the default LaTeX font.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[a4paper, oneside, final]{scrartcl} % Paper options using the scrartcl class
+
+\usepackage{scrpage2} % Provides headers and footers configuration
+\usepackage{titlesec} % Allows creating custom \section's
+\usepackage{marvosym} % Allows the use of symbols
+\usepackage{tabularx,colortbl} % Advanced table configurations
+\usepackage{fontspec} % Allows font customization
+
+\defaultfontfeatures{Mapping=tex-text}
+\setmainfont{Adobe Garamond Pro} % Main document font
+
+\titleformat{\section}{\large\scshape\raggedright}{}{0em}{}[\titlerule] % Section formatting
+
+\pagestyle{scrheadings} % Print the headers and footers on all pages
+
+\addtolength{\voffset}{-0.5in} % Adjust the vertical offset - less whitespace at the top of the page
+\addtolength{\textheight}{3cm} % Adjust the text height - less whitespace at the bottom of the page
+
+\newcommand{\gray}{\rowcolor[gray]{.90}} % Custom highlighting for the work experience and education sections
+
+%----------------------------------------------------------------------------------------
+% FOOTER SECTION
+%----------------------------------------------------------------------------------------
+
+\renewcommand{\headfont}{\normalfont\rmfamily\scshape} % Font settings for footer
+
+\cofoot{
+\addfontfeature{LetterSpace=20.0}\fontsize{12.5}{17}\selectfont % Letter spacing and font size
+
+Paseo Ensenada 1527, Playas de Tijuana {\large\textperiodcentered} Tijuana {\large\textperiodcentered} México % Your mailing address
+{\Large\Letter} chuyespinoza@gmail.com \ {\Large\Telefon} (664) 110-9697 % Your email address and phone number
+}
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\begin{center} % Center everything in the document
+
+%----------------------------------------------------------------------------------------
+% HEADER SECTION
+%----------------------------------------------------------------------------------------
+
+{\addfontfeature{LetterSpace=20.0}\fontsize{26}{26}\selectfont\scshape Jes\'us Espinoza Hern\'andez} % Your name at the top
+
+\vspace{1.5cm} % Extra whitespace after the large name at the top
+
+%----------------------------------------------------------------------------------------
+%	OBJECTIVE
+%----------------------------------------------------------------------------------------
+
+\section{Objetivo}
+
+Busco desarrollarme en el área de Ingeniería en Electrónica o de Software. Tengo 8 años de experiencia programando sistemas de automatización y análisis de datos. Tengo también experiencia en administración de servidoras Linux basadas en openSuse y administración de bases de datos en MYSQL. Soy autodidacto y siempre estoy dispuesto a aprender nuevas cosas. Me gusta trabajar en equipo y esforzarme para sacar buenos resultados.
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE
+%----------------------------------------------------------------------------------------
+
+\section{Experiencia Laboral}
+
+\begin{tabularx}{0.97\linewidth}{>{\raggedleft\scshape}p{2cm}X}
+\gray Periodo & \textbf{Febrero 2005 --- Noviembre 2006}\\
+\gray Empleo & \textbf{PPH Industrial / Wiremold} \\ %\hfill Amsterdam, The Netherlands\\
+\gray Posición & \textbf{Coordinador JIT}\\
+& Responsabilidades incluyen dirigir equipos peque\~nos y grandes en eventos Kaizen para implementar técnicas de mejora continua. Otras responsabilidades incluyen impartir cursos de entrenamiento y certificación de personal que elabora en el área de producción. Diseñe y desarrolle programas basados en tecnología .NET para controlar impresoras térmicas de etiquetas y programas para llevar a cabo el inventario de la materia prima de la empresa. Desarrolle diversas bases de datos para generar reportes de calidad y de producción.
+\end{tabularx}
+
+\vspace{12pt}
+
+\begin{tabularx}{0.97\linewidth}{>{\raggedleft\scshape}p{2cm}X}
+\gray Periodo & \textbf{Noviembre 2009 --- Enero 2011}\\
+\gray Empleo & \textbf{Rectificadores Internacionales}\\ %\hfill New York, USA\\
+\gray Posición & \textbf{Ingeniero de Prueba Eléctrica}\\
+& Supervise la prueba eléctrica de la linea de producción de transistores MOSFET de potencia. Esto incluye realizar y validar los programas que se cargaban a las maquinas. También realice diversos programas para análisis de datos crudos y su generación de reportes estadísticos utilizando el lenguaje de programación Python.
+\end{tabularx}
+
+\vspace{12pt}
+
+\begin{tabularx}{0.97\linewidth}{>{\raggedleft\scshape}p{2cm}X}
+\gray Periodo & \textbf{Enero 2010 --- Presente}\\
+\gray Empleo & \textbf{Radiología Digital Diagnostica}\\
+\gray Posición & \textbf{Ingeniero de Sistemas y desarrollo de software}\\
+& Implemente un sistema de informática radiológica que administra las imágenes medicas generadas por las maquinas de rayos X, así como también los reportes médicos generados por los médicos radiologos. Este sistema es basado en tecnologías Web como HTML 5 y JavaEE 6 y se ejecuta en una servidora Linux con una base de datos basada en MYSQL.
+\end{tabularx}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION
+%----------------------------------------------------------------------------------------
+
+\section{Educación}
+
+\begin{tabularx}{0.97\linewidth}{>{\raggedleft\scshape}p{2cm}X}
+\gray Periodo & \textbf{Enero 1999 -- Agosto 2004}\\
+\gray Grado & \textbf{Ingeniero en Electrónica}\\
+\gray Universidad & \textbf{Universidad Autónoma de Baja California} \hfill Tijuana, México\\
+%& Extra information about degree
+& Especialidad en el área de electrónica digital.\\
+& Curso de entrenamiento Freescale Codewarrior C compiler for HC08 microcontrollers.
+\end{tabularx}
+
+\vspace{12pt}
+
+\begin{tabularx}{0.97\linewidth}{>{\raggedleft\scshape}p{2cm}X}
+\gray Periodo & \textbf{Agosto 2008 --- Noviembre 2013}\\
+\gray Grado & \textbf{Maestro en Ciencias en Telecomunicaciones}\\
+\gray Universidad & \textbf{Universidad Autónoma de Baja California} \hfill Tijuana, México\\
+%& Extra information about degree
+& Proyecto de titulación fue el caracterizar una plataforma de Radio Definido por Software para su uso académico. Implemente un programa que transmitiera datos utilizando la modulación digital QPSK y analizar su respuesta utilizando herramientas básicas por software como analizadores de espectros, diagramas de ojo y constelaciones.
+\end{tabularx}
+
+%----------------------------------------------------------------------------------------
+%	SKILLS
+%----------------------------------------------------------------------------------------
+
+\section{Habilidades}
+
+\begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
+Lenguajes de programación & Python, SQL, C++, C\#, Java \\
+Protocolos \& APIs & REST, DICOM, HL7, JavaEE, .NET \\
+Base de Datos & MySQL \\
+Herramientas & Git, Vim, Linux (servidoras), Office 2007 (Word, PowerPoint, Excel),\\
+& Servidoras de aplicaciones en Java (JBoss 7) \\
+Lenguajes & Español, Ingles 90\% conversacional, 80\% escrito\\
+Extras & Conocimientos de redes y experiencia\\
+& reparando y manteniendo equipo de computo.
+\end{tabular}
+
+%----------------------------------------------------------------------------------------
+%	CONTACTS
+%----------------------------------------------------------------------------------------
+
+\section{Contactos}
+
+\begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
+Claudia Licet Huerta Zarate & Entrenadora --- (664) 212-4682 \\
+Javier Hernández Martínez & Ingeniero --- (664) 357-8940 \\
+Ari Gerardo Sela & Ingeniero --- (664) 286-5641
+\end{tabular}
+
+%----------------------------------------------------------------------------------------
+
+\end{center}
+
+\end{document}
