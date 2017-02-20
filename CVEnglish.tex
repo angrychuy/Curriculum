@@ -29,6 +29,7 @@
 \usepackage{marvosym} % Allows the use of symbols
 \usepackage{tabularx,colortbl} % Advanced table configurations
 \usepackage{fontspec} % Allows font customization
+\usepackage{ragged2e} % For justifying text
 
 \defaultfontfeatures{Mapping=tex-text}
 \setmainfont{Adobe Garamond Pro} % Main document font
@@ -74,10 +75,12 @@ Paseo Ensenada 1527, Playas de Tijuana {\large\textperiodcentered} Tijuana {\lar
 %----------------------------------------------------------------------------------------
 
 \section{About Me}
-
+\justifying{
 I'm an Electrical Engineer with a Masters in Science Degree in the field of Digital Telecommunications. I have experience programming embedded systems and developing data analysis programs. I'm also proficient in Linux server administration based on the openSuse Linux distribution and MySQL server administration.
 I'm very passionate about electronics and programming in general. I'm self-taught, always willing to learn new things and a good team player. I have lead small to medium sized teams in continuous improvement projects.
 My current work is in the medical field and I'm involved in a large Web based project for the Radiology sector.
+}
+
 
 %----------------------------------------------------------------------------------------
 %	SKILLS
@@ -101,7 +104,14 @@ Other & Microcontroller based circuit design.
 \section{Work Experience}
 
 \begin{tabularx}{0.97\linewidth}{>{\raggedleft\scshape}p{2cm}X}
-\gray Period & \textbf{January 2010 --- Current}\\
+	\gray Period & \textbf{February 2014 --- February 2017}\\
+	\gray Employer & \textbf{AgileTransactions}\\
+	\gray Job Title & \textbf{Senior Software Developer}\\
+	& Subject Matter Expert for the MediationZone data transformation and preprocessing tool. Responsibilities include: Providing MediationZone knowledge and support to the clients development team, Engagement with the operators Business Analysts to define solution requirements, Collaboration with operator’s staff and AgileTransactions development team to define most effective solution design, Development of mediation configurations and delivery of final solutions, High availability aggregation and consolidation of data, DTK MediationZone plugin development and Java build environment automation.
+\end{tabularx}
+
+\begin{tabularx}{0.97\linewidth}{>{\raggedleft\scshape}p{2cm}X}
+\gray Period & \textbf{January 2010 --- March 2014}\\
 \gray Employer & \textbf{Radiología Digital Diagnostica}\\
 \gray Job Title & \textbf{IT Engineer}\\
 & Developed a Web based Radiology Information System in Java. The system provides the means to schedule encounters at the clinic, query modalities (X-Ray machines) for images after the study is performed and capture the doctor's medical report. It can also provide performance reports based on different criteria such as number of studies done by modality, number of patients referred by external doctors, etc. The system is developed using JavaEE 6 and the Jboss 7 Application Server on a Linux environment. The back-end database is based on MySQL server.
